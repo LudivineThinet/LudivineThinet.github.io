@@ -1,29 +1,771 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-
-scale=1.0">
-<title>Mon Portfolio Data - Présentation</title>
-<!-- Lien vers la feuille de style CSS -->
-<link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Portfolio de Ludivine Thinet — Data Analyst. Projets en analyse de données, Python, SQL, Power BI et visualisation."
+  >
+
+  <title>Ludivine Thinet — Data Analyst</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<h1>Bienvenue sur mon Portfolio Data</h1>
-<p>Je suis analyste de données en formation. Bienvenue sur ma
-toute première page web !</p>
-<h2>Mes compétences clés</h2>
-<p>J'utilise actuellement les outils suivants pour mes analyses
-:</p>
-<p>Python, Pandas, Seaborn, SQL et Power BI.</p>
-<h2>Liens et ressources</h2>
-<p>Découvrez mon travail et mon profil professionnel :</p>
-<a href="https://github.com/LudivineThinet" target="_blank">Visiter mon profil
-GitHub</a>
-<br/><br/>
-<h2>Une image d'illustration</h2>
-<img
-src="https://storage.googleapis.com/quest_editor_uploads/giUBuyFUSPVKY
-4n5Zr3UCjNTCKM2AOVT.jpg" alt="Illustration Web" width="400">
+
+  <!-- ==================== NAVIGATION ==================== -->
+
+  <header class="nav">
+    <a href="#top" class="nav__logo">
+      LT<span>.</span>
+    </a>
+
+    <nav class="nav__links">
+      <a href="#projets">Projets</a>
+      <a href="#stack">Stack</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="nav__cta">
+      Disponible pour une opportunité
+    </a>
+  </header>
+
+
+  <main id="top">
+
+    <!-- ==================== HERO ==================== -->
+
+    <section class="hero">
+
+      <div class="hero__content">
+
+        <p class="eyebrow">
+          Data Analyst
+        </p>
+
+        <h1>
+          Ludivine<br>
+          <span>Thinet</span>
+        </h1>
+
+        <p class="hero__intro">
+          J'analyse, je visualise et je transforme les données
+          en informations utiles à la décision.
+        </p>
+
+        <p class="hero__description">
+          Après une formation en développement Full Stack,
+          je me spécialise aujourd'hui dans l'analyse de données,
+          avec Python, SQL et les outils de visualisation.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projets" class="button button--primary">
+            Voir mes projets
+            <span>↓</span>
+          </a>
+
+          <a
+            href="https://github.com/LudivineThinet"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button button--secondary"
+          >
+            GitHub ↗
+          </a>
+        </div>
+
+      </div>
+
+
+      <!-- Mini dashboard -->
+
+      <div class="hero__visual">
+
+        <div class="dashboard">
+
+          <div class="dashboard__header">
+            <div>
+              <span class="dashboard__label">DATA / INSIGHTS</span>
+              <strong>Analyse mensuelle</strong>
+            </div>
+
+            <span class="dashboard__dot"></span>
+          </div>
+
+          <div class="dashboard__stats">
+
+            <div class="stat">
+              <span>Revenus</span>
+              <strong>12.4K</strong>
+              <small class="positive">+18.2%</small>
+            </div>
+
+            <div class="stat">
+              <span>Commandes</span>
+              <strong>1 284</strong>
+              <small class="positive">+12.6%</small>
+            </div>
+
+          </div>
+
+          <div class="chart">
+
+            <div class="chart__grid">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <svg
+              class="chart__line"
+              viewBox="0 0 500 170"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+            >
+              <defs>
+                <linearGradient
+                  id="chartGradient"
+                  x1="0"
+                  y1="0"
+                  x2="0"
+                  y2="1"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#0EA5A3"
+                    stop-opacity="0.28"
+                  />
+                  <stop
+                    offset="100%"
+                    stop-color="#0EA5A3"
+                    stop-opacity="0"
+                  />
+                </linearGradient>
+              </defs>
+
+              <path
+                class="chart__area"
+                d="M0,135
+                   C45,120 55,130 90,105
+                   C120,83 140,112 175,92
+                   C210,70 230,85 260,72
+                   C300,55 320,80 350,52
+                   C390,25 410,55 440,30
+                   C465,12 485,22 500,5
+                   L500,170 L0,170 Z"
+              />
+
+              <path
+                class="chart__path"
+                d="M0,135
+                   C45,120 55,130 90,105
+                   C120,83 140,112 175,92
+                   C210,70 230,85 260,72
+                   C300,55 320,80 350,52
+                   C390,25 410,55 440,30
+                   C465,12 485,22 500,5"
+              />
+            </svg>
+
+            <div class="chart__months">
+              <span>JAN</span>
+              <span>FÉV</span>
+              <span>MAR</span>
+              <span>AVR</span>
+              <span>MAI</span>
+              <span>JUN</span>
+            </div>
+
+          </div>
+
+          <div class="dashboard__footer">
+            <span>Python · SQL · Data Viz</span>
+            <span>2026</span>
+          </div>
+
+        </div>
+
+        <div class="visual__badge">
+          <span>01</span>
+          Analyse
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== INTRODUCTION ==================== -->
+
+    <section class="statement">
+
+      <div class="section-number">01</div>
+
+      <div class="statement__content">
+
+        <p class="eyebrow">Mon approche</p>
+
+        <h2>
+          Des données brutes aux
+          <em>bonnes décisions.</em>
+        </h2>
+
+        <p>
+          Une analyse utile ne consiste pas seulement à produire
+          des graphiques. Elle commence par comprendre les données,
+          identifier leurs limites, faire émerger les tendances
+          et restituer les résultats de manière claire.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== PROJETS ==================== -->
+
+    <section id="projets" class="projects">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="eyebrow">02 / Projets</p>
+
+          <h2>
+            Mes analyses
+          </h2>
+        </div>
+
+        <p>
+          Quelques projets qui illustrent ma façon
+          de travailler avec la donnée.
+        </p>
+
+      </div>
+
+
+      <!-- Projet 1 -->
+
+      <article class="project project--featured">
+
+        <div class="project__visual project__visual--sales">
+
+          <div class="mock-dashboard">
+
+            <div class="mock-dashboard__top">
+              <span>SALES OVERVIEW</span>
+              <span>2026</span>
+            </div>
+
+            <div class="mock-kpis">
+
+              <div>
+                <small>CA TOTAL</small>
+                <strong>84.2K €</strong>
+              </div>
+
+              <div>
+                <small>COMMANDES</small>
+                <strong>3 842</strong>
+              </div>
+
+              <div>
+                <small>PANIER MOYEN</small>
+                <strong>21.9 €</strong>
+              </div>
+
+            </div>
+
+            <div class="mock-bars">
+
+              <span style="--value: 42%"></span>
+              <span style="--value: 67%"></span>
+              <span style="--value: 51%"></span>
+              <span style="--value: 79%"></span>
+              <span style="--value: 62%"></span>
+              <span style="--value: 92%"></span>
+              <span style="--value: 73%"></span>
+              <span style="--value: 98%"></span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="project__content">
+
+          <span class="project__number">01</span>
+
+          <p class="project__type">
+            Analyse de données
+          </p>
+
+          <h3>
+            Analyse des ventes en ligne
+          </h3>
+
+          <p class="project__description">
+            Nettoyage, transformation et exploration d'un dataset
+            e-commerce afin d'identifier les tendances commerciales,
+            évaluer la qualité des données et formuler des
+            recommandations d'aide à la décision.
+          </p>
+
+          <div class="project__tags">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>SQL</span>
+            <span>Plotly</span>
+          </div>
+
+          <span class="project__status">
+            Bientôt sur GitHub
+          </span>
+
+        </div>
+
+      </article>
+
+
+      <!-- Projet 3 -->
+
+      <article class="project">
+
+        <div class="project__visual project__visual--sql">
+
+          <div class="sql-window">
+
+            <div class="sql-window__bar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <small>analysis.sql</small>
+            </div>
+
+            <pre><code><span class="sql-keyword">WITH</span> sales <span class="sql-keyword">AS</span> (
+  <span class="sql-keyword">SELECT</span>
+    employee,
+    <span class="sql-function">SUM</span>(amount) <span class="sql-keyword">AS</span> revenue
+  <span class="sql-keyword">FROM</span> orders
+  <span class="sql-keyword">GROUP BY</span> employee
+)
+
+<span class="sql-keyword">SELECT</span>
+  employee,
+  revenue,
+  <span class="sql-function">RANK</span>() <span class="sql-keyword">OVER</span> (
+    <span class="sql-keyword">ORDER BY</span> revenue <span class="sql-keyword">DESC</span>
+  ) <span class="sql-keyword">AS</span> ranking
+<span class="sql-keyword">FROM</span> sales;</code></pre>
+
+          </div>
+
+        </div>
+
+
+        <div class="project__content">
+
+          <span class="project__number">02</span>
+
+          <p class="project__type">
+            SQL · Business Intelligence
+          </p>
+
+          <h3>
+            ClassicModels
+          </h3>
+
+          <p class="project__description">
+            Analyse d'une base relationnelle pour construire
+            des indicateurs de performance autour des ventes,
+            des ressources humaines, de la finance et de la logistique,
+            à l'aide de requêtes SQL avancées.
+          </p>
+
+          <div class="project__tags">
+            <span>SQL</span>
+            <span>MySQL Workbench</span>
+            <span>DBeaver</span>
+            <span>CTE</span>
+            <span>Window Functions</span>
+          </div>
+
+          <span class="project__status">
+            Bientôt sur GitHub
+          </span>
+
+        </div>
+
+      </article>
+
+
+      <!-- Projet 3 : CinéStream -->
+
+      <article class="project">
+
+        <div class="project__visual project__visual--notebook">
+
+          <div class="notebook-window">
+
+            <div class="notebook-window__bar">
+              <span>●</span>
+              cinestream_analyse.ipynb
+            </div>
+
+            <div class="notebook-cell">
+              <span class="notebook-cell__label">In [1]:</span>
+<pre><code>import pandas as pd
+
+df = pd.read_csv("films.csv")
+df.info()</code></pre>
+            </div>
+
+            <div class="notebook-cell">
+              <span class="notebook-cell__label">In [2]:</span>
+<pre><code>df.groupby("genre")["note"].mean() \
+  .sort_values(ascending=False)</code></pre>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="project__content">
+
+          <span class="project__number">03</span>
+
+          <p class="project__type">
+            Analyse de données
+          </p>
+
+          <h3>
+            CinéStream
+          </h3>
+
+          <p class="project__description">
+            Exploration d'un dataset de films avec Pandas, dans un
+            notebook Jupyter : nettoyage des données et premières
+            analyses exploratoires.
+          </p>
+
+          <div class="project__tags">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>Jupyter Notebook</span>
+          </div>
+
+          <span class="project__status">
+            Bientôt sur GitHub
+          </span>
+
+        </div>
+
+      </article>
+
+    </section>
+
+
+    <!-- ==================== STACK ==================== -->
+
+    <section id="stack" class="stack">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="eyebrow">03 / Stack</p>
+
+          <h2>
+            Mes outils
+          </h2>
+        </div>
+
+        <p>
+          Une culture technique qui me permet de comprendre
+          la donnée de sa source jusqu'à sa restitution.
+        </p>
+
+      </div>
+
+
+      <div class="stack__grid">
+
+        <div class="stack__category stack__category--main">
+
+          <span class="stack__index">01</span>
+
+          <h3>Analyse</h3>
+
+          <div class="stack__items">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>SQL</span>
+          </div>
+
+        </div>
+
+
+        <div class="stack__category">
+
+          <span class="stack__index">02</span>
+
+          <h3>Visualisation</h3>
+
+          <div class="stack__items">
+            <span>Power BI</span>
+            <span>Matplotlib</span>
+            <span>Plotly</span>
+          </div>
+
+        </div>
+
+
+        <div class="stack__category">
+
+          <span class="stack__index">03</span>
+
+          <h3>Bases de données</h3>
+
+          <div class="stack__items">
+            <span>SQLite</span>
+            <span>MySQL</span>
+            <span>PostgreSQL</span>
+          </div>
+
+        </div>
+
+
+        <div class="stack__category">
+
+          <span class="stack__index">04</span>
+
+          <h3>Environnement</h3>
+
+          <div class="stack__items">
+            <span>DBeaver</span>
+            <span>MySQL Workbench</span>
+            <span>Jupyter Notebook</span>
+            <span>VS Code</span>
+            <span>Git</span>
+            <span>GitHub</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== À PROPOS ==================== -->
+
+    <section id="apropos" class="about">
+
+      <div class="section-number">04</div>
+
+      <div class="about__content">
+
+        <p class="eyebrow">
+          À propos
+        </p>
+
+        <h2>
+          Du développement<br>
+          vers la <em>data.</em>
+        </h2>
+
+        <div class="about__text">
+
+          <p>
+            Mon parcours a commencé dans le développement Full Stack.
+            Cette expérience m'a permis de comprendre comment les
+            applications fonctionnent, comment les données sont
+            structurées et comment elles circulent entre une interface,
+            une API et une base de données.
+          </p>
+
+          <p>
+            Je me spécialise aujourd'hui dans l'analyse de données.
+            J'aime particulièrement partir d'un jeu de données imparfait,
+            comprendre ce qu'il raconte, construire les bons indicateurs
+            puis rendre les résultats accessibles.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== BACKGROUND DEV ==================== -->
+
+    <section class="background">
+
+      <div class="background__intro">
+
+        <p class="eyebrow">
+          Background technique
+        </p>
+
+        <h2>
+          Un peu de <span>dev</span>,
+          beaucoup de data.
+        </h2>
+
+      </div>
+
+      <div class="background__skills">
+
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Bootstrap</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>React Native</span>
+        <span>Node.js</span>
+        <span>Express</span>
+        <span>PHP</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>GitLab</span>
+        <span>Postman</span>
+        <span>XAMPP</span>
+        <span>Figma</span>
+        <span>Neon</span>
+        <span>Render</span>
+        <span>Vercel</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== CONTACT ==================== -->
+
+    <section id="contact" class="contact">
+
+      <p class="eyebrow">
+        05 / Contact
+      </p>
+
+      <h2>
+        Une opportunité ?<br>
+        <em>On en parle.</em>
+      </h2>
+
+      <p class="contact__intro">
+        Je suis ouverte aux opportunités en Data Analyst
+        et aux projets autour de la donnée.
+      </p>
+
+      <div class="contact__actions">
+
+        <a
+          href="https://www.linkedin.com/in/ludivine-thinet/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button button--primary"
+        >
+          LinkedIn ↗
+        </a>
+
+        <a
+          href="https://github.com/LudivineThinet"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button button--secondary"
+        >
+          GitHub ↗
+        </a>
+
+      </div>
+
+
+      <form
+        class="contact__form"
+        action="https://formspree.io/f/TON_ID_FORMSPREE"
+        method="POST"
+      >
+
+        <div class="form__group">
+          <label for="name">Nom</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            required
+          >
+        </div>
+
+        <div class="form__group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="_replyto"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <div class="form__group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="button button--primary"
+        >
+          Envoyer le message →
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+
+  <!-- ==================== FOOTER ==================== -->
+
+  <footer class="footer">
+
+    <span>
+      © 2026 Ludivine Thinet
+    </span>
+
+    <span>
+      Data Analyst · Rhône
+    </span>
+
+  </footer>
+
+
 </body>
 </html>
