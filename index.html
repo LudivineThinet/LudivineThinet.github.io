@@ -259,9 +259,82 @@
       </div>
 
 
-      <!-- Projet 1 -->
+      <!-- Projet 1 : Crime Data LA -->
 
       <article class="project project--featured">
+
+        <div class="project__visual project__visual--notebook">
+
+          <div class="notebook-window">
+
+            <div class="notebook-window__bar">
+              <span>●</span>
+              crime_data_analyse.ipynb
+            </div>
+
+            <div class="notebook-cell">
+              <span class="notebook-cell__label">In [1]:</span>
+<pre><code>import numpy as np
+
+crime_types, counts = np.unique(
+    data["Crm Cd Desc"], return_counts=True
+)</code></pre>
+            </div>
+
+            <div class="notebook-cell">
+              <span class="notebook-cell__label">In [2]:</span>
+<pre><code>top5 = crime_types[np.argsort(counts)[-5:]]
+top5[::-1]</code></pre>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="project__content">
+
+          <span class="project__number">01</span>
+
+          <p class="project__type">
+            Python · Data Viz · Application
+          </p>
+
+          <h3>
+            Crime Data LA
+          </h3>
+
+          <p class="project__description">
+            Analyse du dataset des crimes du LAPD (2020 à aujourd'hui)
+            en Python et NumPy : profil des victimes, typologie des
+            crimes et statuts de résolution, avec une restitution
+            interactive via Streamlit.
+          </p>
+
+          <div class="project__tags">
+            <span>Python</span>
+            <span>NumPy</span>
+            <span>Streamlit</span>
+            <span>Data Viz</span>
+          </div>
+
+          <a
+            href="https://github.com/LudivineThinet/projet-crime-data.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project__link"
+          >
+            Voir sur GitHub ↗
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- Projet 2 : Analyse des ventes en ligne -->
+
+      <article class="project">
 
         <div class="project__visual project__visual--sales">
 
@@ -311,7 +384,7 @@
 
         <div class="project__content">
 
-          <span class="project__number">01</span>
+          <span class="project__number">02</span>
 
           <p class="project__type">
             Analyse de données
@@ -344,7 +417,7 @@
       </article>
 
 
-      <!-- Projet 3 -->
+      <!-- Projet 3 : ClassicModels -->
 
       <article class="project">
 
@@ -382,7 +455,7 @@
 
         <div class="project__content">
 
-          <span class="project__number">02</span>
+          <span class="project__number">03</span>
 
           <p class="project__type">
             SQL · Business Intelligence
@@ -405,71 +478,6 @@
             <span>DBeaver</span>
             <span>CTE</span>
             <span>Window Functions</span>
-          </div>
-
-          <span class="project__status">
-            Bientôt sur GitHub
-          </span>
-
-        </div>
-
-      </article>
-
-
-      <!-- Projet 3 : CinéStream -->
-
-      <article class="project">
-
-        <div class="project__visual project__visual--notebook">
-
-          <div class="notebook-window">
-
-            <div class="notebook-window__bar">
-              <span>●</span>
-              cinestream_analyse.ipynb
-            </div>
-
-            <div class="notebook-cell">
-              <span class="notebook-cell__label">In [1]:</span>
-<pre><code>import pandas as pd
-
-df = pd.read_csv("films.csv")
-df.info()</code></pre>
-            </div>
-
-            <div class="notebook-cell">
-              <span class="notebook-cell__label">In [2]:</span>
-<pre><code>df.groupby("genre")["note"].mean() \
-  .sort_values(ascending=False)</code></pre>
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div class="project__content">
-
-          <span class="project__number">03</span>
-
-          <p class="project__type">
-            Analyse de données
-          </p>
-
-          <h3>
-            CinéStream
-          </h3>
-
-          <p class="project__description">
-            Exploration d'un dataset de films avec Pandas, dans un
-            notebook Jupyter : nettoyage des données et premières
-            analyses exploratoires.
-          </p>
-
-          <div class="project__tags">
-            <span>Python</span>
-            <span>Pandas</span>
-            <span>Jupyter Notebook</span>
           </div>
 
           <span class="project__status">
@@ -533,6 +541,8 @@ df.info()</code></pre>
             <span>Power BI</span>
             <span>Matplotlib</span>
             <span>Plotly</span>
+            <span>Seaborn</span>
+            <span>Streamlit</span>
           </div>
 
         </div>
@@ -644,9 +654,6 @@ df.info()</code></pre>
         <span>Node.js</span>
         <span>Express</span>
         <span>PHP</span>
-        <span>Git</span>
-        <span>GitHub</span>
-        <span>GitLab</span>
         <span>Postman</span>
         <span>XAMPP</span>
         <span>Figma</span>
@@ -702,10 +709,10 @@ df.info()</code></pre>
 
       <form
         class="contact__form"
-        action="https://formspree.io/f/TON_ID_FORMSPREE"
+        action="https://formspree.io/f/xjyvaobn"
         method="POST"
       >
-
+ 
         <div class="form__group">
           <label for="name">Nom</label>
           <input
@@ -716,7 +723,7 @@ df.info()</code></pre>
             required
           >
         </div>
-
+ 
         <div class="form__group">
           <label for="email">Email</label>
           <input
@@ -727,7 +734,7 @@ df.info()</code></pre>
             required
           >
         </div>
-
+ 
         <div class="form__group">
           <label for="message">Message</label>
           <textarea
@@ -737,35 +744,36 @@ df.info()</code></pre>
             required
           ></textarea>
         </div>
-
+ 
         <button
           type="submit"
           class="button button--primary"
         >
           Envoyer le message →
         </button>
-
+ 
       </form>
-
+ 
     </section>
-
+ 
   </main>
-
-
+ 
+ 
   <!-- ==================== FOOTER ==================== -->
-
+ 
   <footer class="footer">
-
+ 
     <span>
       © 2026 Ludivine Thinet
     </span>
-
+ 
     <span>
       Data Analyst · Rhône
     </span>
-
+ 
   </footer>
-
-
+ 
+ 
 </body>
 </html>
+ 
